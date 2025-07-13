@@ -44,10 +44,10 @@ const courses = [
     image: "https://cdn-icons-png.flaticon.com/512/906/906343.png",
   },
   {
-    title: "DevOps Essentials",
-    description: "Understand CI/CD, Docker, Kubernetes, and streamline development workflows.",
-    image: "https://cdn.worldvectorlogo.com/logos/devops.svg",
-  },
+  title: "DevOps Essentials",
+  description: "Understand CI/CD, Docker, Kubernetes, and streamline development workflows.",
+  image: "https://cdn-icons-png.flaticon.com/512/2721/2721290.png",
+},
   {
     title: "Machine Learning",
     description: "Explore supervised and unsupervised learning using Python and real-world datasets.",
