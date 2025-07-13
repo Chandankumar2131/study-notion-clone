@@ -66,7 +66,7 @@ export default function SignupForm({ setIsLoggedIn }) {
 
       {/* Form */}
       <form onSubmit={submitHandler} className="flex flex-col gap-6">
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           {/* First Name */}
           <label className="w-full">
             <p className="mb-1 text-sm font-semibold text-gray-300">
@@ -117,7 +117,7 @@ export default function SignupForm({ setIsLoggedIn }) {
         </label>
 
         {/* Passwords */}
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           {/* Password */}
           <label className="relative w-full">
             <p className="mb-1 text-sm font-semibold text-gray-300">
