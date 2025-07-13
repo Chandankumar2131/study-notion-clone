@@ -62,7 +62,10 @@ export default function NavBar({ isLoggedIn, setIsLoggedIn }) {
                   Dashboard
                 </button>
               </Link>
-              <button
+
+
+              <Link to="/">
+                 <button
                 onClick={() => {
                   setIsLoggedIn(false);
                   toast.success("Logged Out Successfully");
@@ -71,6 +74,8 @@ export default function NavBar({ isLoggedIn, setIsLoggedIn }) {
               >
                 Log out
               </button>
+              </Link>
+           
             </>
           )}
         </div>
