@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   return (
@@ -16,9 +17,12 @@ export default function Dashboard() {
         </p>
 
         {/* Call to Action (Dummy) */}
-        <button className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg shadow-md hover:opacity-90 transition">
+        <Link to="/courses">
+         <button className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg shadow-md hover:opacity-90 transition">
           Explore Courses
         </button>
+        </Link>
+       
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ export default function LoginForm({ setIsLoggedIn }) {
   const submitHandler = (event) => {
     event.preventDefault();
     setIsLoggedIn(true);
-    toast.success("Logged In");
+    toast.success("Logged In Successfully ");
     navigate("/dashboard");
   };
 
