@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 const courses = [
   {
     title: "MERN Stack",
@@ -71,6 +73,7 @@ export default function Courses() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {courses.map((course, index) => (
           <div key={index} className="bg-gray-800 rounded-xl shadow-md p-6 hover:scale-105 transform transition-all duration-300">
+
             <img 
               src={course.image} 
               alt={course.title} 

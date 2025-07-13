@@ -28,12 +28,12 @@ export default function Home() {
       </div>
 
       <button 
-        onClick={() => navigate('/courses')}
-       className="bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-3 text-lg rounded-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-pink-500/50"
+  onClick={() => navigate('/what-we-do')}
+  className="bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-3 text-lg rounded-lg font-semibold shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-pink-500/50"
+>
+  Know What We Teach
+</button>
 
-      >
-        Get Started
-      </button>
       
       <p className="mt-6 text-sm text-gray-500">
         No experience? No problem. Whether you're a beginner or looking to upskill — we’ve got you covered.
