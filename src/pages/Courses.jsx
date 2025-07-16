@@ -1,7 +1,7 @@
 import React from 'react';
 
 const courses = [
-  {
+   {
     title: "MERN Stack",
     description: "Master MongoDB, Express, React, and Node.js to build full-stack web applications.",
     image: "https://cdn.worldvectorlogo.com/logos/mern.svg",
@@ -77,14 +77,14 @@ const courses = [
 
 export default function Courses() {
   return (
-    <div className="bg-gray-900 text-white px-6 py-12">
+    <div className="bg-gray-900 text-white px-6 py-12 min-h-screen">
       <h2 className="text-4xl font-bold text-center mb-10">Explore Our Popular Courses</h2>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {courses.map((course, index) => (
           <div
             key={index}
-            className="bg-gray-800 rounded-xl shadow-md p-6 hover:scale-105 transform transition-all duration-300"
+            className="bg-gray-800 rounded-xl shadow-md p-6 hover:scale-105 transform transition-all duration-300 flex flex-col items-center"
           >
             <img
               src={course.image}
@@ -96,6 +96,9 @@ export default function Courses() {
             <p className="text-green-400 text-center mt-3 text-lg font-semibold">
               Price: {course.price}
             </p>
+            <button className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-md transition duration-200">
+              Buy Now
+            </button>
           </div>
         ))}
       </div>
