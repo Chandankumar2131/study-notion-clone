@@ -6,7 +6,7 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import About from "./pages/About"; // ✅ Import About
 import Contact from "./pages/Contact"; // ✅ Import Contact
-
+import ScrollToTop from "./components/ScrollToTop"
 import { Routes, Route } from "react-router-dom";
 import Courses from "./pages/Courses";
 import WhatWeDo from "./components/WhatWeDo";
@@ -17,8 +17,9 @@ export default function App() {
   return (
     <div>
       <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-
+ <ScrollToTop/>
       <Routes>
+       
         <Route path="/" element={<Home />} />
         <Route
           path="/login"

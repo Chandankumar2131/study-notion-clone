@@ -17,6 +17,13 @@ export default function Home() {
         />
       </div>
 
+      {/* Typing Animation */}
+      <img 
+        src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FFD1&center=true&vCenter=true&width=500&lines=Hey+!+I'm+Chandan+Yadav;MERN+Stack+Developer;Building+Projects+Daily" 
+        alt="Typing SVG"
+        className="mb-6 w-full max-w-md"
+      />
+
       {/* Heading */}
       <h1 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent text-center">
         Welcome to StudyNotion
