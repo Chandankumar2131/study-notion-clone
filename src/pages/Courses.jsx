@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const courses = [
    {
     title: "MERN Stack",
@@ -96,7 +97,9 @@ export default function Courses() {
             <p className="text-green-400 text-center mt-3 text-lg font-semibold">
               Price: {course.price}
             </p>
-            <button className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-md transition duration-200">
+            <button className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-md transition duration-200"
+            
+            >
               Buy Now
             </button>
           </div>
