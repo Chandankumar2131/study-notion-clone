@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function NavBar({ isLoggedIn, setIsLoggedIn }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <header className="w-full bg-gray-950 text-white shadow-lg px-6 py-4 border-b border-gray-700">
+    <header className="w-full bg-gray-950 text-white shadow-lg px-6 py-4 border-b border-gray-700 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
@@ -63,19 +64,16 @@ export default function NavBar({ isLoggedIn, setIsLoggedIn }) {
                 </button>
               </Link>
 
-
-              <Link to="/">
-                 <button
+              <button
                 onClick={() => {
                   setIsLoggedIn(false);
                   toast.success("Logged Out Successfully");
+                  navigate("/");
                 }}
                 className="px-4 py-1 rounded-md bg-red-600 hover:bg-red-500 transition text-white font-medium"
               >
                 Log out
               </button>
-              </Link>
-           
             </>
           )}
         </div>
@@ -132,6 +130,7 @@ export default function NavBar({ isLoggedIn, setIsLoggedIn }) {
                     setIsLoggedIn(false);
                     toast.success("Logged Out Successfully");
                     toggleMenu();
+                    navigate("/");
                   }}
                   className="w-full py-2 mt-2 bg-red-600 text-white rounded-md hover:bg-red-500 transition"
                 >
