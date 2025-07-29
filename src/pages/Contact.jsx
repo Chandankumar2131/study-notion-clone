@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import emailjs from 'emailjs-com';
 import Lottie from 'lottie-react';
-import successAnimation from '../assets/success.json'; // ✅ Update path if needed
+import success from '../assets/success.json'; // ✅ Update path if needed
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -56,7 +56,7 @@ export default function Contact() {
 
         {showSuccess && (
           <div className="mb-6 flex justify-center">
-            <Lottie animationData={successAnimation} style={{ height: 150 }} />
+            <Lottie animationData={success} style={{ height: 150 }} />
           </div>
         )}
 
